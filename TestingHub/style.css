@@ -224,3 +224,22 @@ header {
     max-width: 30%;
     text-align: center;
 }
+
+/* major features section */
+
+.major-feature-section {
+    padding: 30px var(--padding-inline-section) 0;
+}
+
+.major-feature-container {
+    gap: 30px;
+}
+
+.feature-img img {
+    width: 100%;
+}
+
+.feature-desc {
+    flex-direction: column;
+    align-items: flex-start;
+}
