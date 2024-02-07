@@ -70,7 +70,32 @@ ul {
     color: var(--accent-color-dark);
 }
 
+.primary-button {
+    background-color: var(--accent-color);
+    border-radius: 6px;
+    font-weight: 700;
+    color: white !important;
+    padding: 12px 24px;
+    box-shadow: 0 0 2px var(--secondary-text-color);
+    transition: 0.2s ease-out;
+}
+.primary-button:hover {
+    background-color: var(--accent-color-dark);
+}
 
+.secondary-button {
+    border:0.5px solid var(--secondary-text-color);
+    border-radius: 6px;
+    font-weight: 700;
+    color: var(--primary-text-color) !important;
+    padding: 12px 24px;
+    transition: 0.2s ease-out;
+}
+
+.secondary-button:hover {
+    border-color: var(--accent-color);
+    color: var(--accent-color) !important;
+}
 
 /* top-banner */
 
@@ -116,34 +141,6 @@ ul {
     gap: 40px;
 }
 
-.sign-up {
-    background-color: var(--accent-color);
-    border-radius: 6px;
-    font-weight: 700;
-    color: white !important;
-    padding: 12px 24px;
-    box-shadow: 0 0 2px var(--secondary-text-color);
-    transition: 0.2s ease-out;
-}
-
-.sign-up:hover {
-    background-color: var(--accent-color-dark);
-}
-
-.sign-in {
-    border:0.5px solid var(--secondary-text-color);
-    border-radius: 6px;
-    font-weight: 700;
-    color: var(--primary-text-color) !important;
-    padding: 12px 24px;
-    transition: 0.2s ease-out;
-}
-
-.sign-in:hover {
-    border-color: var(--accent-color);
-    color: var(--accent-color) !important;
-}
-
 */ header-section */
 
 header {
@@ -162,23 +159,13 @@ header {
 .left-header h1 {
     margin-top: 20px;
 }
-.header-button {
-    margin-top: 20px;
-    background-color: var(--accent-color);
-    border-radius: 6px;
-    font-weight: 700;
-    color: white !important;
-    padding: 12px 24px;
-    box-shadow: 0 0 2px var(--secondary-text-color);
-    transition: 0.2s ease-out;
-}
-
-.header-button:hover {
-    background-color: var(--accent-color-dark);
-}
 
 .right-header img {
     width: 600px;
+}
+
+.header-btn {
+    margin-top: 20px;
 }
 
 */ companies-section */ 
@@ -187,6 +174,7 @@ header {
     font-size: 1rem;
     font-weight: 700;
     color: white;
+    margin-top: 70px;
     padding: 15px 30px;
     text-align: center;
 }
@@ -203,5 +191,36 @@ header {
 }
 
 .logo {
-    height: 46px;
+    height: 45px;
+}
+
+/* features-section */
+
+.features-section {
+    padding: 80px var(--padding-inline-section) 0;
+    background-image: url(./assets/asset\ 29.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.features-header {
+    text-align: center;
+}
+
+.features-header h2 {
+    margin-bottom: 15px;
+}
+
+.features-area {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 40px;
+    margin-top: 30px;
+}
+
+.features-card {
+    flex-direction: column;
+    gap: 20px;
+    max-width: 30%;
+    text-align: center;
 }
