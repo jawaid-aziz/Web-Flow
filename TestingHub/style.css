@@ -141,7 +141,7 @@ ul {
     gap: 40px;
 }
 
-*/ header-section */
+/* header-section */
 
 header {
     padding: 50px var(--padding-inline-section);
@@ -168,7 +168,7 @@ header {
     margin-top: 20px;
 }
 
-*/ companies-section */ 
+/* companies-section */ 
 
 .company-text {
     font-size: 1rem;
@@ -225,7 +225,7 @@ header {
     text-align: center;
 }
 
-/* major features section */
+/* major-features section */
 
 .major-feature-section {
     padding: 30px var(--padding-inline-section) 0;
@@ -244,7 +244,7 @@ header {
     align-items: flex-start;
 }
 
-/*cta section */
+/* cta-section */
 
 .cta-section-container {
     flex-direction: column;
@@ -262,7 +262,7 @@ header {
     margin-top: 10px;
 }
 
-/* footer section */
+/* footer-section */
 
 footer {
     padding-block: 80px;
