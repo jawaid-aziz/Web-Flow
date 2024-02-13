@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TestingHub</title>
     <link rel="stylesheet" href="style.css">
-    
+    <link rel="stylesheet" href="media.css">
 </head>
 <body>
         <!-- top-banner -->
@@ -24,7 +24,7 @@
                     <p class="company-name-text">.Testing</p>
                     <p class="company-name-text hub">Hub</p>
                 </div>
-                <div class="nav-links">
+                <div class="nav-links" id="nav-links">
                     <ul class="flex">
                         <li><a href="#" class="hover-link">Products</a></li>
                         <li><a href="#" class="hover-link">Customer</a></li>
@@ -34,6 +34,9 @@
                         <li><a href="#" class="hover-link primary-button">Sign up</a></li>
                     </ul>
                 </div>
+                <a href="#" class="nav-toggle hover-link" id="nav-toggle">
+                    <i class="fa-solid fa-bars"></i>
+                </a>
             </div>
         </nav>
 
@@ -131,18 +134,18 @@
             </div>
         </section>
         <section class="major-feature-section">
-            <div class="container flex major-feature-container">
+            <div class="container flex major-feature-container" id="second-major-feature">
+                <div class="feature-img">
+                    <img src="./assets/asset 20.png">
+                </div>
                 <div class="feature-desc flex">
                     <h2>Marketers</h2>
                     <p>Fine-tune landing pages, messaging, and creative, helping you optimise conversion rates on marketing campaigns and product launches.</p>
-                </div>
-                <div class="feature-img">
-                    <img src="./assets/asset 20.png">
                 </div>    
             </div>
         </section>
         <section class="major-feature-section">
-            <div class="container flex major-feature-container">
+            <div class="container flex major-feature-container" >
                 <div class="feature-img">
                     <img src="./assets/asset 21.png">
                 </div>    
@@ -213,5 +216,13 @@
 
 
     <script src="https://kit.fontawesome.com/eac9709c67.js" crossorigin="anonymous"></script>
+    <script>
+        const toggleButton = document.getElementById('nav-toggle');
+        const navLinks = document.getElementById('nav-links');
+        
+        toggleButton.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        })
+    </script>
 </body>
 </html>
