@@ -40,40 +40,40 @@ img {
     opacity: 50%;
 }
 
-.rock {
+#rock {
     background-color: aqua;
 }
 
-.paper {
+#paper {
     background-color: chocolate;
 
 }
 
-.scissors {
+#scissors {
     background-color: brown;
 }
 
-#paper {
+.paper {
     transition: 0.3s ease-in-out;
 }
 
-#paper:hover {
+.paper:hover {
     zoom: 1.2;
 }
 
-#rock {
+.rock {
     transition: 0.3s ease-in-out;
 }
 
-#rock:hover{
+.rock:hover{
     zoom: 1.2;
 }
 
-#scissors {
+.scissors {
     transition: 0.3s ease-in-out;
 }
 
-#scissors:hover{
+.scissors:hover{
     zoom: 1.2;
 }
 
