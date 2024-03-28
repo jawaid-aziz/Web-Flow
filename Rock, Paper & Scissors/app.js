@@ -2,6 +2,10 @@ let userScore = 0;
 let cpuScore = 0;
 
 const choices = document.querySelectorAll(".sign");
+const msg = document.querySelector("#msg");
+const userScoreCount = document.querySelector("#user-score");
+const cpuScoreCount = document.querySelector("#cpu-score");
+
 
 const genCpuChoice = () => {
     const options = ["rock", "paper", "scissors"];
@@ -9,23 +13,29 @@ const genCpuChoice = () => {
     return options[randomIndex];
 };
 
-const showWinner = (userWin) => {
+const showWinner = (userWin, userChoice, cpuChoice) => {
     if(userWin)
     {
-        console.log("You Win!");
+        userScore++;
+        userScoreCount.innerText = userScore;
+        msg.innerText = `You Win! Your ${userChoice} beats ${cpuChoice}`;
+        msg.style.backgroundColor = "green";
     }
     else
     {
-        console.log("You Lose!");
+        cpuScore++;
+        cpuScoreCount.innerText = cpuScore;
+        msg.innerText = `You Lost. ${cpuChoice} beats your ${userChoice}`;
+        msg.style.backgroundColor = "red";
     }
 };
 
 const drawGame = () => {
-    console.log("game was draw");
+    msg.innerText = "Game was Draw. Play Again!";
+    msg.style.backgroundColor = "#1B2631";
 };
 
 const playGame = (userChoice) => {
-    console.log("user choice = ", userChoice);
     const cpuChoice = genCpuChoice();
     console.log("cpu choice = ", cpuChoice);
         
@@ -48,7 +58,7 @@ const playGame = (userChoice) => {
         {
             userWin = cpuChoice === "rock" ? false:true;
         }
-        showWinner(userWin);
+        showWinner(userWin, userChoice, cpuChoice);
     }
 };
 
