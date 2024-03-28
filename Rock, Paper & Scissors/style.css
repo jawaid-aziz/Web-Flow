@@ -37,7 +37,11 @@ img {
 }
 
 .sign:hover {
-    opacity: 50%;
+    width: 150px;
+    height: 150px;
+    border: 6px solid;
+    border-radius: 50%;
+    border-color: #1B2631;
 }
 
 #rock {
@@ -53,29 +57,6 @@ img {
     background-color: brown;
 }
 
-.paper {
-    transition: 0.3s ease-in-out;
-}
-
-.paper:hover {
-    zoom: 1.2;
-}
-
-.rock {
-    transition: 0.3s ease-in-out;
-}
-
-.rock:hover{
-    zoom: 1.2;
-}
-
-.scissors {
-    transition: 0.3s ease-in-out;
-}
-
-.scissors:hover{
-    zoom: 1.2;
-}
 
 .score-board {
     display: flex;
