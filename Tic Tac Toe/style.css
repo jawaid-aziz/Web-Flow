@@ -39,4 +39,20 @@
     box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
     background-color: rgb(156, 149, 220);
     font-size: 8vmin;
+    transition: 0.2s ease-in-out;
+}
+
+.box:hover {
+    background-color: rgb(103, 90, 214);
+    border: 2px solid;
+}
+
+#reset-btn {
+    padding: 1rem;
+    font-size: 1.25rem;
+    background-color: rgb(23, 10, 28);
+    color: #ffff;
+    border-radius: 1rem;
+    border: none;
+    width: 15rem;
 }
