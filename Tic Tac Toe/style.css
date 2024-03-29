@@ -43,8 +43,9 @@
 }
 
 .box:hover {
-    background-color: rgb(103, 90, 214);
+    background-color: #6c61d3;
     border: 2px solid;
+    cursor: crosshair ;
 }
 
 #reset-btn {
@@ -55,4 +56,9 @@
     border-radius: 1rem;
     border: none;
     width: 15rem;
+    transition: 0.25s ease-in-out;
+}
+
+#reset-btn:hover {
+    cursor: pointer;
 }
