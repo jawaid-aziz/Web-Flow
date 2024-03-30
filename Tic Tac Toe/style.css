@@ -36,7 +36,6 @@
     width: 18vmin;
     border-radius: 1rem;
     border: none;
-    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
     background-color: rgb(156, 149, 220);
     font-size: 8vmin;
     transition: 0.2s ease-in-out;
@@ -61,4 +60,8 @@
 
 #reset-btn:hover {
     cursor: pointer;
+}
+
+.winning-box {
+    background-color: rgb(95, 81, 219);
 }
