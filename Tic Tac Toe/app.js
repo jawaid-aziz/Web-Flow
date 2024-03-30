@@ -67,7 +67,7 @@ boxes.forEach ( (box) => {
             box.innerText = "X";
             turn_O = true;
         }
-        box.disabled = true;
+        
 
         checkWinner();
     });
