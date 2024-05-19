@@ -67,10 +67,6 @@
     width: 50px;
 }
 
-.nav-inks-container {
-    
-}
-
 .nav-links {
     display: flex;
     align-items: center;
@@ -83,5 +79,9 @@
     color: gray;
     font-family: Arial, Helvetica, sans-serif;
     text-decoration: none;
+}
+
+.header-section img {
+    width: 100%;
 }
 
