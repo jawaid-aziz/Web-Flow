@@ -41,3 +41,47 @@
     font-weight: normal;
     vertical-align: middle;
 }
+
+.nav-logos-container {
+    padding-inline: 100px;
+    padding-top: 25px;
+    padding-bottom: 20px;
+}
+
+.nav-logos {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.nav-logo-search {
+    width: 22px;
+}
+
+.nav-logo-zilbil {
+    width: 100px;
+}
+
+.nav-logo-cart {
+    width: 50px;
+}
+
+.nav-inks-container {
+    
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 30px;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: gray;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+}
+
