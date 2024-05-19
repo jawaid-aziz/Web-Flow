@@ -3,3 +3,41 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.top-banner {
+    background-color: black;
+}
+
+.banner-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    height: 43px;
+    transition: 0.2s;
+}
+
+.banner-info p {
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    font-weight: 450;
+    letter-spacing: 1px;
+    color: white;
+}
+
+.banner-info p:hover {
+    cursor: pointer;
+    text-decoration: underline;    
+}
+
+.banner-info img {
+    width: 20px;
+    font-weight: normal;
+    vertical-align: middle;
+}
