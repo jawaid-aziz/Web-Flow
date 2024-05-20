@@ -122,4 +122,36 @@
     color: gray;
 }
 
+footer, .sub-footer {
+    color: white;
+    background-color: black;
+    padding-inline: 100px;
+}
+
+.footer-logo img {
+    width: 120px;
+}
+
+.social-icons img {
+    vertical-align: middle;
+    background-color: white;
+    width: 25px;
+}
+
+.upper-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.lower-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.email {
+    padding-inline: 85px;
+}
+
 
