@@ -15,9 +15,6 @@
 }
 
 .banner-info {
-    display: flex;
-    align-items: center;
-    justify-content: center;
     flex-direction: row;
     height: 43px;
     transition: 0.2s;
@@ -68,9 +65,6 @@
 }
 
 .nav-links {
-    display: flex;
-    align-items: center;
-    justify-content: center;
     padding-bottom: 30px;
     gap: 20px;
 }
@@ -84,4 +78,48 @@
 .header-section img {
     width: 100%;
 }
+
+
+.products {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-inline: 90px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.product1 {
+    flex-direction: column;
+    border: 1px solid black;
+    border-radius: 3.5%;
+    padding: 15px;
+}
+
+.product2 {
+    flex-direction: column;
+    border: 1px solid black;
+    border-radius: 3.5%;
+    padding: 15px;
+}
+
+.product3 {
+    flex-direction: column;
+    border: 1px solid black;
+    border-radius: 3.5%;
+    padding: 15px;
+}
+
+.products img {
+    width: 340px;
+}
+
+.products p1 {
+    font-weight: bold;
+}
+
+.products p2 {
+    font-weight: bold;
+    color: gray;
+}
+
 
