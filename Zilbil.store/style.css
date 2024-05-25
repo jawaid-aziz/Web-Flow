@@ -143,11 +143,10 @@ footer, .sub-footer {
 
 .social-icons {
     gap: 10px;
-}
-
-.social-icons img {
-    vertical-align: middle;
-    width: 25px;
+    img {
+        vertical-align: middle;
+        width: 25px;
+    }
 }
 
 .upper-footer {
@@ -242,10 +241,9 @@ footer, .sub-footer {
     border: none;
     padding: 10px 20px;
     cursor: pointer;
-}
-
-.email-button img {
-    width: 16px;
+    img {
+        width: 16px;
+    }
 }
 
 .sub-footer {
