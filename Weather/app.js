@@ -1,24 +1,39 @@
+const URL = "https://weather-by-api-ninjas.p.rapidapi.com/v1/weather?city=";
 
-let result;
-
-const url = 'https://weather-by-api-ninjas.p.rapidapi.com/v1/weather?city=Seattle';
 const options = {
-	method: 'GET',
-	headers: {
-		'x-rapidapi-key': '51912d5ec3msh73f3140194ae2fcp1b6d19jsnc756b686ef93',
-		'x-rapidapi-host': 'weather-by-api-ninjas.p.rapidapi.com'
-	}
+  method: "GET",
+  headers: {
+    "x-rapidapi-key": "51912d5ec3msh73f3140194ae2fcp1b6d19jsnc756b686ef93",
+    "x-rapidapi-host": "weather-by-api-ninjas.p.rapidapi.com",
+  },
 };
 
-async function fetchWeather(){
+const fetchWeather = (city) => {
+  fetch(URL + city, options)
+    .then((response) => response.json())
+    .then((response) => {
+      console.log(response);
 
- try {
-	const response = await fetch(url, options);
-	result = await response.text();
-    console.log(result);
-} catch (error) {
-	console.error(error);
-}
+      cloud_pct.innerHTML = response.cloud_pct;
+      temp.innerHTML = response.temp;
+      feels_like.innerHTML = response.feels_like;
+      humidity.innerHTML = response.humidity;
+      min_temp.innerHTML = response.min_temp;
+      max_temp.innerHTML = response.max_temp;
+      wind_speed.innerHTML = response.wind_speed;
+      wind_degrees.innerHTML = response.wind_degrees;
+      sunrise.innerHTML = response.sunrise;
+      sunset.innerHTML = response.sunset;
+    })
+    .catch((err) => console.log(err));
 };
 
-fetchWeather();
+const sumbit = document.getElementById('submit');
+const cityName = document.getElementById('city');
+const forcastCity = document.querySelector('#forcastCity');
+
+sumbit.addEventListener("click", (e) => {
+  e.preventDefault();
+  forcastCity.innerText = `Forcast for ${cityName.value}`;
+  fetchWeather(cityName.value);
+});
