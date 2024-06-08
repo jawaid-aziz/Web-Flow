@@ -15,11 +15,11 @@ const fetchWeather = (city) => {
       console.log(response);
 
       cloud_pct.innerHTML = response.cloud_pct;
-      temp.innerHTML = response.temp;
+      temp.innerHTML = `${response.temp} C`;
       feels_like.innerHTML = response.feels_like;
       humidity.innerHTML = response.humidity;
-      min_temp.innerHTML = response.min_temp;
-      max_temp.innerHTML = response.max_temp;
+      min_temp.innerHTML = `${response.min_temp} C`;
+      max_temp.innerHTML = `${response.max_temp} C`;
       wind_speed.innerHTML = response.wind_speed;
       wind_degrees.innerHTML = response.wind_degrees;
       sunrise.innerHTML = response.sunrise;
@@ -31,6 +31,8 @@ const fetchWeather = (city) => {
 const sumbit = document.getElementById('submit');
 const cityName = document.getElementById('city');
 const forcastCity = document.querySelector('#forcastCity');
+
+fetchWeather('Abbottabad');
 
 sumbit.addEventListener("click", (e) => {
   e.preventDefault();
