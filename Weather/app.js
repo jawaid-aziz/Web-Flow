@@ -1,4 +1,4 @@
-const weatherCheck = document.querySelector('.text');
+
 let result;
 
 const url = 'https://weather-by-api-ninjas.p.rapidapi.com/v1/weather?city=Seattle';
@@ -15,8 +15,10 @@ async function fetchWeather(){
  try {
 	const response = await fetch(url, options);
 	result = await response.text();
-    weatherCheck.innerHTML = result;
+    console.log(result);
 } catch (error) {
 	console.error(error);
 }
 };
+
+fetchWeather();
