@@ -7,11 +7,11 @@ function App() {
   return (
     <div className="todo-container">
       <Header/>
-      <TodoItem />
-      <TodoItem />
-      <TodoItem />
-      <TodoItem />
-      <TodoItem />
+      <TodoItem todo="Drink"/>
+      <TodoItem todo="Eat"/>
+      <TodoItem complete="true" todo="Study"/>
+      <TodoItem todo="Play"/>
+      <TodoItem todo="Sleep"/>
       <Button/>
     </div>
   );
