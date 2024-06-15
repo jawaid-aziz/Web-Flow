@@ -1,8 +1,13 @@
 import React from "react";
 import { useState } from "react";
+import { useEffect } from "react";
 
 const Counter = () => {
-    const [count, setCount] = useState(10);
+    let [count, setCount] = useState(10);
+    useEffect(() => {
+        count = count + 5;
+    },[count]);
+
     return (
         <div>
             <p>Count Component - {count}</p>
